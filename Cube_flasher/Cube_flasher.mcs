@@ -1,0 +1,59 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=D:\Microchip_C30\SDR-Cube\Cube_flasher\main.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ256GP710
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=D:\Program Files\Microchip\MPLAB C30_v320\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|main.c|memory.s||<obj>||<lib>||<lkr>|p33FJ256GP710_for_flasher.gld||
+SuiteArgsString=
+ToolArgsString=-g -Wall
+TraceCmdString=
+DebugOptions=
+[File001]
+Location=D:\Microchip_C30\SDR-Cube\Cube_flasher\memory.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ256GP710
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=D:\Program Files\Microchip\MPLAB C30_v320\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|main.c|memory.s||<obj>||<lib>||<lkr>|p33FJ256GP710.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File002]
+Location=D:\Microchip_C30\SDR-Cube\Cube_flasher\Cube_flasher.cof
+Folder=Output
+DeviceName=dsPIC33FJ256GP710
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
+LanguageToolLocation=D:\Program Files\Microchip\MPLAB C30_v320\bin\pic30-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|main.c|memory.s||<obj>||<lib>||<lkr>|p33FJ256GP710_for_flasher.gld||
+SuiteArgsString=
+ToolArgsString=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem
+TraceCmdString=
+DebugOptions=
+[File003]
+Location=D:\Microchip_C30\SDR-Cube\Cube_flasher\Cube_flasher.hex
+Folder=Output
+DeviceName=dsPIC33FJ256GP710
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
+LanguageToolLocation=D:\Program Files\Microchip\MPLAB C30_v320\bin\pic30-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|main.c|memory.s||<obj>||<lib>||<lkr>|p33FJ256GP710_for_flasher.gld||
+SuiteArgsString=
+ToolArgsString=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem
+TraceCmdString=
+DebugOptions=
+[TOOL_LOC_STAMPS]
+tool_loc{DE18EB1A-B46B-486B-B96F-A811A635DFAC}=D:\Program Files\Microchip\MPLAB C30_v320\bin\pic30-as.exe
+tool_loc{069BD372-6CA0-40D4-BF2F-5DC806D05083}=D:\Program Files\Microchip\MPLAB C30_v320\bin\pic30-gcc.exe
+tool_loc{433C3D55-811D-409D-A6BF-159CF9355B42}=D:\Program Files\Microchip\MPLAB C30_v320\bin\pic30-ld.exe
